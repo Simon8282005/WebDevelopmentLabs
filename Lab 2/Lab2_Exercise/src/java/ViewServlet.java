@@ -28,13 +28,14 @@ public class ViewServlet extends HttpServlet {
        List<Product> productList = productDAO.selectAllUsers();
        
        out.println("<h2>Product List</h2>");
-       out.println("<table border = '1'><tr><th>ID</th><th>Username</th><th>Password</th><th>Role</th><th>Actions</th></tr>");
+       out.println("<table border = '1'><tr><th>ID</th><th>Name</th><th>Price</th><th>Category</th><th>Quantity</th><th>Action</th></tr>");
        
        for (Product product : productList) {
             out.println("<tr>");
             out.println("<td>" + product.getId() + "</td>");
             out.println("<td>" + product.getName() + "</td>");
             out.println("<td>" + product.getPrice() + "</td>");
+            out.println("<td>" + product.getCategory() + "</td>");
             out.println("<td>" + product.getQuantity() + "</td>");
             out.println("<td><a href= 'UpdateServlet?id=" + product.getId() + "'>Edit</a> | ");    
             out.println("<a href='DeleteServlet?id=" + product.getId() + "'>Delete</a></td>");

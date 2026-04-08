@@ -30,10 +30,10 @@ public class UpdateServlet extends HttpServlet {
         out.println("<h2>Update Product</h2>");
         out.println("<form action='UpdateServlet' method='POST'>");
         out.println("<input type='hidden' name='id' value='" + existingProduct.getId() + "'>");
-        out.println("Username: <input type='text' name='username' value='" + existingProduct.getName() + "' required><br><br>");
+        out.println("Name: <input type='text' name='name' value='" + existingProduct.getName() + "' required><br><br>");
         out.println("Category: <input type='text' name='category' value='" + existingProduct.getCategory() + "' required><br><br>");
         out.println("Price: <input type='number' name='price' value='" + existingProduct.getPrice() + "' required><br><br>");
-        out.println("Quantity: <input type='text' name='category' value='" + existingProduct.getQuantity() + "' required><br><br>");
+        out.println("Quantity: <input type='number' name='quantity' value='" + existingProduct.getQuantity() + "' required><br><br>");
         
         String currentCategory = existingProduct.getCategory();
         out.println("Role: <select name='roles'>");
