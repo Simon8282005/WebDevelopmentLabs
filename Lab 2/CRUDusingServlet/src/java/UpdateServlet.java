@@ -96,10 +96,4 @@ public class UpdateServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
 }

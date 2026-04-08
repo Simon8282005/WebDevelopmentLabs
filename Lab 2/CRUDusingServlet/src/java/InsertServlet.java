@@ -54,10 +54,4 @@ public class InsertServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
 }
