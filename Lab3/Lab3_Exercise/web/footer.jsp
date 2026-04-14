@@ -10,17 +10,18 @@
     <head>
         <style>
             footer {
-                background-color: #FDE5C6;
+                background-color: #0F172A;
+                color: white;
                 text-align: center;
-                padding: 1px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
             }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Footer</title>
     </head>
-    <body>
-        <footer>
-            <p>&copy;2026 Simon</p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy;2026 Simon</p>
+    </footer>
 </html>

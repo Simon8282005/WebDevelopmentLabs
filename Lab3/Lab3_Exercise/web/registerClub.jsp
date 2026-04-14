@@ -12,23 +12,97 @@
         <title>Register Page</title>
     </head>
     <body>
-        <h1>Please fill in you personal information....</h1>
+        <style>
+            body {
+                background-color: #1E293B;
+                color: #F8FAFC;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            
+            fields {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .field {
+                background-color: #334155;
+                color: #F8FAFC;
+                font-size: 14px;
+                border: none;
+                outline: none;
+                display: block;
+                left: 50%;
+                height: 34px;
+                vertical-align: middle;
+                border-radius: 22px;
+                width: 220px;
+                box-sizing: border-box;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            
+            .field::placeholder {
+                color: #94A3B8;
+            }
+            
+            .field:focus {
+               outline: 2px solid #6366F1;
+            }
+            
+            .submit {
+                color: white;
+                border-radius: 22px;
+                min-height: 30px;
+                padding: 5px;
+                background-color: #6366F1;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+            }
+            
+            .submit:hover {
+                outline: 1px solid white;
+            }
+            
+            .cancel {
+                color: black;
+                border-radius: 22px;
+                min-height: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .cancel:hover {
+                outline: 1px solid white;
+            }
+        </style>
+        
         <form method="POST" action="processRegistration">
-            <label>Name: </label>
-            <input type="text" name="name" placeholder="Name.."><br /><br />
+            <h1>Please fill in you personal information....</h1>
+            <div class="fields">
+                <span>
+                    <input type="text" class="field" name="name" placeholder="Name.."><br /><br />
+                </span>
+                
+                <span>
+                    <input type="text" class="field" name="matric" placeholder="Matic Number.."><br /><br />
+                </span>
+                
+                <span>
+                    <select class="field" name="club" value="Select your club..">
+                        <option value="COMTECH">COMTECH</option>
+                        <option value="XXR">XXR</option>
+                        <option value="Buddist">Buddist</option>
+                    </select><br /><br />
+                </span>
+            </div>
             
-            <label>Matric Number: </label>
-            <input type="text" name="matric" placeholder="Matic Number.."><br /><br />
-            
-            <label>Selected Club</label>
-            <select name="club">
-                <option value="COMTECH">COMTECH</option>
-                <option value="XXR">XXR</option>
-                <option value="Buddist">Buddist</option>
-            </select><br /><br />
-            
-            <input type="submit" value="Register">
-            <input type="reset" value="Cancel">
+            <input class="submit" type="submit" value="Register">
+            <input class="cancel" type="reset" value="Cancel">
         </form>
     </body>
 </html>

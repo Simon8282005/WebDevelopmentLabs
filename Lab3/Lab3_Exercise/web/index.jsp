@@ -8,20 +8,38 @@
 <!DOCTYPE html>
 <html>
     <style>
+        body {
+            background-color: #F8FAFC;
+        }
+        
         nav {
             text-align: center;
             margin: 5px;
+            background-color: #1E293B;
+            padding: 10px;
         }
         
         nav a {
-            color: black;
+            color: white;
             text-decoration: none;
             padding: 10px 10px 10px 10px;
         }
         
         nav a:hover {
-            color: grey;
+            color: #94A3B8;
+            text-decoration: underline;
         }
+        
+        .title {
+            text-align: center;
+            color: #1E293B;
+        }
+        
+        .content {
+            text-align: center;
+            color: #64748B;
+        }
+        
     </style>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,7 +53,9 @@
             <a href="memberDirectory.jsp">Club member Directory</a>
         </nav>
         
-        <p>Welcome to the Student Club Recruitment Website !</p>
+        <br />
+        <h3 class="title">Welcome to the Student Club Recruitment Website !</h3>
+        <p class="content">You can use the navigation bar to access different page of website. Feel free to explore the website !</p>
         <jsp:include page="footer.jsp" />
     
 </html>

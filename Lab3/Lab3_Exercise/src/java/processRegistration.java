@@ -21,13 +21,6 @@ import java.util.ArrayList;
 @WebServlet(urlPatterns = {"/processRegistration"})
 public class processRegistration extends HttpServlet {
 
-    
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-    }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -48,8 +41,6 @@ public class processRegistration extends HttpServlet {
         }
         
         studentList.add(new Student(studentName, matricNum, club));
-        System.out.println("List add successfully..");
-        System.out.println("Name" + studentList.get(0).getName());
         
         // Save and upadte list into the session
         session.setAttribute("studentList", studentList);
@@ -57,10 +48,4 @@ public class processRegistration extends HttpServlet {
         // Redirect to other page to display result
         response.sendRedirect("memberDirectory.jsp");
     }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }
-
 }

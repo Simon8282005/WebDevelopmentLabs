@@ -9,7 +9,8 @@
 <html>
     <style>
         header {
-            background-color: #FDE5C6;
+            color: #F8FAFC;
+            background-color: #1E293B;
             text-align: center;
             padding: 8px;
         }
