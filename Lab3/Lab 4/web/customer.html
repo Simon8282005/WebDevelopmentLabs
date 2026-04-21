@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Lab 4: Customer Support</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Use JSP Scriplet and JSP Expression in application </h1>
+        <div class="card">
+            <div class="formContainer">
+                <form action="processCustomer.jsp" method="POST">
+                    <label class="formTitle">Customer Discount</label><br/><br/>
+
+                    <label class="formLabel">Customer Code: </label>
+                    <input type="text" name="customerCode" placeholder="Key-in customer code"><br/><br/>
+
+                    <label class="formLabel">Quantity</label>
+                    <input type="text" name="customerQuantity" placeholder="Key-in customer code"><br/><br/>
+
+                    <label class="formLabel">Customer Type: </label><br/><br/>
+
+                    <label for="formInputRadio">Normal Customer</label>
+                    <input type="radio" name="customerType" value="1">
+
+                    <label for="formInputRadio">Privilage Customer</label>
+                    <input type="radio" name="customerType" value="2"><br/><br/>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Cancel">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

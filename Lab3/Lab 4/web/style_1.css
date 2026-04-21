@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease-in;
+    padding: 20px;
+}
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formContainer .formTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7144C1;
+}
+.formContainer p {
+    display: block;
+}
