@@ -14,7 +14,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Update Subject</h1>
         <%
             String subjectCode = request.getParameter("subjectCode");
             subjectDAO subDAO = new subjectDAO();

@@ -19,8 +19,8 @@
         %>
         
         <h1>Welcome ! Please choose action below..</h1>
-        <a href="${pageContext.request.contextPath}/subject/registerSubject.jsp?action=registerSubject">Register new subject..</a><br/>
+        <a href="${pageContext.request.contextPath}/subject/registerSubject.jsp">Register new subject..</a><br/>
         
-        <a href="${pageContext.request.contextPath}/subject/viewSubject.jsp?action=viewSubject">View subject..</a><br/>
+        <a href="${pageContext.request.contextPath}/subject/viewSubject.jsp">View subject..</a><br/>
     </body>
 </html>

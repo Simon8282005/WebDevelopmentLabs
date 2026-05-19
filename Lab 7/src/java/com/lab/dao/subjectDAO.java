@@ -47,13 +47,14 @@ public class subjectDAO {
     }
 
     // Update current subject
-    public boolean updateSubject(String subjectName, String subjectCode) {
-        String SQL = "UPDATE registered_subjects SET subject_name = ?, subject_code = ?";
+    public boolean updateSubject(String subjectName, String subjectCode, String id) {
+        String SQL = "UPDATE registered_subjects SET subject_name = ?, subject_code = ? WHERE id = ?";
 
         try {
             PreparedStatement ps = conn.prepareStatement(SQL);
             ps.setString(1, subjectName);
             ps.setString(2, subjectCode);
+            ps.setString(3, subjectCode);
             ps.executeUpdate();
 
             System.out.println("Update database successfully.");
